@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ブルースター固有値計算機</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>ブルースター固有値計算機</h1>
+
+  <h2>結果: <span id="result">19.5</span></h2>
+
+  <label>戦艦レベル：</label>
+  <div id="shipLevelButtons" class="level-buttons"></div>
+
+  <label for="weaponType">武器レベル：</label>
+  <select id="weaponType" onchange="calculate()">
+    <option value="normal">その他</option>
+    <option value="dartLauncher">ダートランチャー</option>
+  </select>
+  <div id="weaponLevelButtons" class="level-buttons"></div>
+
+  <label>シールドレベル:</label>
+  <div id="shieldLevelButtons" class="level-buttons"></div>
+
+  <label for="supportType">サポートレベル：</label>
+  <select id="supportType" onchange="calculate()">
+    <option value="normal">その他</option>
+    <option value="leap">リープ</option>
+  </select>
+
+  <div id="support1LevelButtons" class="level-buttons"></div>
+  <label>サポートレベル：その他</label>
+  <div id="support2LevelButtons" class="level-buttons"></div>
+  <div id="support3LevelButtons" class="level-buttons"></div>
+  <div id="support4LevelButtons" class="level-buttons"></div>
+  <div id="support5LevelButtons" class="level-buttons"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
